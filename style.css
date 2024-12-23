@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: linear-gradient(45deg, rebeccapurple, purple)
+}
+
+.title {
+    color: white;
+}
+
+.textbox {
+    width: 60%;
+    height: 50%;
+    color: white;
+    background: rgb(20, 20, 20, .5);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-size: 1.25rem;
+    padding: 1.25rem;
+}
+
+.row {
+    width: 60%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+button {
+    width: 30%;
+    height: 90%;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    background: blue;
+    transition: .3s all ease;
+    font-size: 1.25rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button:hover {
+    background: darkblue;
+    transition: .3s all ease;
+    cursor: pointer;
+}
+
+.option {
+    width: 60%;
+    height: 90%;
+    background: #403d84;
+    outline: 0;
+    border: 0;
+    padding: 0 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: white;
+}
+
+@media (max-width: 722px) {
+    .textbox,
+    .row {
+        width: 80%
+    }
+}
